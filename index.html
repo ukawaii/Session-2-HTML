@@ -8,15 +8,99 @@
 <body>
 <header>
     <strong>Welcome to your dashboard!</strong>
+    <section>
+        <div>
+            <img src="res/images/me.png" width="128" height="128" alt="My picture">
+        </div>
+        <div>
+            <ul>
+                <li> Michael Kevin Karlson</li>
+                <li> 1/1/1900</li>
+                <li> Software Engineering</li>
+            </ul>
+        </div>
+        <div>
+            <strong>2.65</strong>
+        </div>
+    </section>
+    <section>
+        <h1>Courses</h1>
+        <table>
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Course Title</th>
+                <th>Semester</th>
+                <th>Grade</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td><a href="https://courses.cs.ut.ee/2024/ASD/fall" target="_blank"> Agile software development</a>
+                </td>
+                <td>fall</td>
+                <td>82</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><a href="https://courses.cs.ut.ee/2024/systemsmodelling/fall" target="_blank"> Systems
+                    modelling </a></td>
+                <td>fall</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><a href="https://courses.cs.ut.ee/2024/RE/fall" target="_blank"> Requirements Engineering </a></td>
+                <td>fall</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><a href="https://courses.cs.ut.ee/2023/HCI/fall" target="_blank"> Human Computer Interaction </a>
+                </td>
+                <td>fall</td>
+                <td>65</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td>End of line</td>
+            </tr>
+            </tfoot>
+        </table>
+    </section>
+    <section>
+        <form>
+            <label for="course_name">Course Title:</label><br>
+            <input type="text" id="course_name" name="course_name"><br>
+
+            <label for="time">Semester:</label>
+
+            <select name="time" id="time">
+                <option value="Fall">Fall</option>
+                <option value="Spring">Spring</option>
+            </select>
+            <br>
+
+            <input type="radio" id="person" name="person" value="inperson">
+            <label for="person">Virtual attendance</label><br>
+            <input type="radio" id="deperson" name="deperson" value="deperson">
+            <label for="person">Physical attendance</label><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
 </header>
 <footer>
     <ul>
         <li>
-            <a href="https://ois2.ut.ee/">OIS</a>
+            <a href="https://ois2.ut.ee/" target="_blank">OIS</a>
         </li>
         <li>
-            <a href="https://courses.cs.ut.ee/">Courses</a>
+            <a href="https://courses.cs.ut.ee/" target="_blank">Courses</a>
         </li>
+
     </ul>
 </footer>
 </body>
